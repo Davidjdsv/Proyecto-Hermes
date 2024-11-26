@@ -1,18 +1,79 @@
+/* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
-/* Inicio barra lateral */
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+}
 
+header h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    width: 30px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    display: block;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Sidebar */
 .sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #f5f6f8;
-    border-right: 1px solid #ddd;
     position: fixed;
     top: 0;
+    left: -250px;
+    /* Oculto fuera de la pantalla */
+    width: 250px;
+    height: 100%;
+    background-color: #f5f6f8;
+    border-right: 1px solid #ddd;
+    overflow-y: auto;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.sidebar.active {
     left: 0;
+    /* Aparece en pantalla */
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #f00;
 }
 
 .logo {
@@ -61,18 +122,13 @@ body {
     background-color: #e8e9eb;
 }
 
-.menu li i {
-    margin-right: 10px;
+/* Content */
+.content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
 }
 
-.submenu {
-    list-style: none;
-    padding-left: 20px;
-    display: none;
+.sidebar.active~.content {
+    margin-left: 250px;
 }
-
-.menu li:hover .submenu {
-    display: block;
-}
-
-/* Fin barra lateral */

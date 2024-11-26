@@ -4,12 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gestión de Inventarios</title>
-    <link rel="stylesheet" href="/Css/styles.css">
+    <title>Menú Hamburguesa Lateral</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="Css/styles.css">
+    <!-- JS -->
+    <script src="JavaScript/script.js" defer></script>
 </head>
 
 <body>
-    <div class="sidebar">
+    <header>
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <h1>Gestión de Inventarios</h1>
+    </header>
+
+    <div class="sidebar" id="sidebar">
+        <button class="close-btn" id="close-btn">×</button>
         <div class="logo">
             <img src="logo.png" alt="Hermes Logo" class="logo-img">
             <span>Hermes</span>
