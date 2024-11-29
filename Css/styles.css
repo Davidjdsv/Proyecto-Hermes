@@ -21,7 +21,7 @@ header h1 {
     font-size: 20px;
 }
 
-/* Hamburger Icon */
+/* Inicio Hamburger Icon */
 .hamburger {
     width: 30px;
     height: 20px;
@@ -38,6 +38,8 @@ header h1 {
     border-radius: 2px;
     transition: all 0.3s ease;
 }
+
+/* Fin Hamburger Icon */
 
 /* Sidebar */
 .sidebar {
