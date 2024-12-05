@@ -11,3 +11,13 @@ hamburger.addEventListener("click", () => {
 closeBtn.addEventListener("click", () => {
     sidebar.classList.remove("active");
 });
+
+// Abrir sub-menú
+document.addEventListener("DOMContentLoaded", () => {
+    const equiposMenuItem = document.querySelector(".menu li:nth-child(3)"); // "Equipos"
+    const submenu = equiposMenuItem.querySelector(".submenu");
+
+    equiposMenuItem.addEventListener("click", () => {
+        submenu.classList.toggle("open");
+    });
+});

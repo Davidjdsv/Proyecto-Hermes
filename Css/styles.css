@@ -8,11 +8,17 @@
     --Verde: #39a900;
 }
 
+/* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Gris);
 }
 
 /* Header */
@@ -28,6 +34,7 @@ header {
 header h1 {
     margin: 0;
     font-size: 20px;
+    color: var(--Blanco);
 }
 
 /* Inicio Hamburger Icon */
@@ -133,6 +140,46 @@ header h1 {
     background-color: #e8e9eb;
 }
 
+/* Asegúrate de ocultar el submenú por defecto */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Para colocarlo debajo del menú padre */
+    left: 0;
+    background-color: #f5f6f8;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
+    z-index: 1000;
+    border: 1px solid #ddd;
+}
+
+/* Para los elementos del submenú */
+.submenu li {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover sobre los elementos del submenú */
+.submenu li:hover {
+    background-color: #e8e9eb;
+}
+
+/* Posicionamiento del contenedor del submenú */
+.has-submenu {
+    position: relative; /* Necesario para que el submenu quede dentro del contenedor padre */
+}
+
+/* Mostrar el submenú cuando se pasa el mouse */
+.has-submenu:hover .submenu {
+    display: block; /* Cambia a visible */
+}
+
+
 /* Content */
 .content {
     margin-left: 0;
@@ -218,7 +265,39 @@ header h1 {
     font-size: 14px;
 }
 
-/* Tabla */
+/* Inicio menú desplegable equipos */
+
+/* Submenu */
+.submenu {
+    display: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 20px; /* Para alinear con el nivel superior */
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+}
+
+.submenu.open {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.submenu li:hover {
+    color: #007bff;
+}
+
+
+/* Fin menú desplegable equipos */
+
+/* Inicio Tabla */
 .inventory-table {
     width: 100%;
     border-collapse: collapse;
