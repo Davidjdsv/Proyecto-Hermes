@@ -47,8 +47,76 @@
     </div>
 
     <main class="content">
-        <!-- Aquí empieza la tabla -->
+        <h2>Inventarios</h2>
+        <div class="stats">
+            <div class="stat">
+                <span>Activos</span>
+                <strong>90</strong>
+                <small>+2.5%</small>
+            </div>
+            <div class="stat">
+                <span>Reparación</span>
+                <strong>12</strong>
+                <small>-1.2%</small>
+            </div>
+            <div class="stat">
+                <span>Baja</span>
+                <strong>32</strong>
+                <small>+11%</small>
+            </div>
+            <div class="stat">
+                <span>Extraviado</span>
+                <strong>3</strong>
+                <small>+5.2%</small>
+            </div>
+        </div>
+        <button class="add-btn">+ Agregar equipo</button>
+        <input type="text" class="search-bar" placeholder="Buscar...">
+        <table class="inventory-table">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>N# Serie</th>
+                    <th>Marca</th>
+                    <th>Fecha ingreso</th>
+                    <th>Estado</th>
+                    <th>Cuentadante</th>
+                    <th>A. cuentadante</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234567890</td>
+                    <td>1234-123-456789</td>
+                    <td>Lenovo</td>
+                    <td>11/11/2024</td>
+                    <td><span class="status active">Activo</span></td>
+                    <td>Jon Doe</td>
+                    <td>C. académica</td>
+                    <td>
+                        <button class="action-btn edit">✏️</button>
+                        <button class="action-btn details">📄</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1234567891</td>
+                    <td>1234-123-456790</td>
+                    <td>Lenovo</td>
+                    <td>11/11/2024</td>
+                    <td><span class="status active">Activo</span></td>
+                    <td>Jon Doe</td>
+                    <td>C. académica</td>
+                    <td>
+                        <button class="action-btn edit">✏️</button>
+                        <button class="action-btn details">📄</button>
+                    </td>
+                </tr>
+                <!-- Puedes añadir más filas aquí -->
+            </tbody>
+        </table>
     </main>
+    
 </body>
 
 </html>
