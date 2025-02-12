@@ -1,4 +1,4 @@
-/* General */
+/* Inicio General */
 :root{
     --Negro: #000;
     --Gris: #333;
@@ -8,7 +8,6 @@
     --Verde: #39a900;
 }
 
-/* General */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -21,7 +20,8 @@ a {
     color: var(--Gris);
 }
 
-/* Header */
+/* Fin general */
+
 header {
     display: flex;
     align-items: center;
