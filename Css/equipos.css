@@ -1,8 +1,45 @@
+h2{
+    padding: 0 .3em;
+    font-size: 2em;
+}
+
+.cabecero-equipos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: var(--Borde) solid 1px;
+    margin-bottom: 1em;
+}
+
+.lista-usuarios{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+}
+
+.lista-usuarios li{
+    padding: .8em;
+}
+
+.filtro-fecha ul{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.filtro-fecha ul li:nth-child(2) {
+    background-color: var(--Gris-suave);
+    font-weight: bold;
+}
+
+.filtro-fecha li{
+    padding: 1em;
+}
+
 /* Content */
 .content {
-    margin-left: 0;
-    padding: 20px;
-    transition: margin-left 0.3s ease;
+    padding: 1em;
 }
 
 .sidebar.active~.content {
@@ -12,27 +49,23 @@
 /* INICIO TABLA EQUIPOS */
 
 /* General for Table */
-.content h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: var(--Gris);
-}
 
 /* Estadísticas */
 .stats {
     display: flex;
     gap: 20px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .stat {
-    background-color: var(--Gris-suave);
     padding: 15px;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1;
+    border: var(--Borde) 1px solid;
+    width: 50%;
+
 }
 
 .stat span {

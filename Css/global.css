@@ -2,17 +2,19 @@
 :root{
     --Negro: #000;
     --Gris: #333;
+    --Borde: #b3b3b3;
     --Gris-suave: #f5f6f8;
     --Blanco: #fff;
     --Rojo: #f00;
     --Verde: #39a900;
 }
 
-body {
+* {
+    padding: 0;
     margin: 0;
     font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
+    box-sizing: border-box;
+    list-style: none;
 }
 
 a {
