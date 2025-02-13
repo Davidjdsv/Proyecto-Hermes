@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Menú lateral hamburguesa -->
     <header>
         <div class="hamburger" id="hamburger">
             <span></span>
@@ -34,8 +35,8 @@
             <small>2847523</small>
         </div>
         <ul class="menu">
-            <li><i class="icon-user"></i> Inicio</li>
-            <li><i class="icon-users"></i> Usuarios</li>
+            <li><i class="icon-user"></i><a href="#">Inicio</a></li>
+            <li><i class="icon-users"></i><a href="#">Usuarios</a></li>
             <li class="has-submenu">
                 <i class="icon-devices"></i><a href="Equipos.html">Equipos</a>
                 <ul class="submenu">
@@ -92,7 +93,12 @@
             </div>
         </div>
         <button class="add-btn">+ Agregar equipo</button>
-        <input type="text" class="search-bar" placeholder="Buscar...">
+        
+        <div class="search-container">
+            <input type="text" class="search-bar" placeholder="Buscar...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        
         <table class="inventory-table">
             <thead>
                 <tr>
